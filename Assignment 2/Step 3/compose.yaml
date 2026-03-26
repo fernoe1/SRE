@@ -1,0 +1,18 @@
+services:
+  server:
+    build: ./server
+    ports:
+      - "4000:4000"
+    environment:
+      - PORT=
+      - MONGO_URI=
+      - SECRET=
+      - SMTP_GMAIL=
+      - SMTP_GMAIL_PASS=
+
+  client:
+    build: ./client
+    ports:
+      - "5000:5000"
+    depends_on:
+      - server
