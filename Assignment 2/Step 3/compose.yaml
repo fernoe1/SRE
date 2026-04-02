@@ -4,11 +4,11 @@ services:
     ports:
       - "4000:4000"
     environment:
-      - PORT=
-      - MONGO_URI=
-      - SECRET=
-      - SMTP_GMAIL=
-      - SMTP_GMAIL_PASS=
+      - PORT=4000
+      - MONGO_URI=mongodb+srv://krutoytemirlan2007_db_user:z0LcOg7BKMAdh3BS@cluster0.dgbvftc.mongodb.net/?appName=Cluster0
+      - SECRET=130924254092218021
+      - SMTP_GMAIL=krutoytemirlan2007@gmail.com
+      - SMTP_GMAIL_PASS=htvkmfdiqymyzmhh
 
   client:
     build: ./client

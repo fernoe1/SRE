@@ -1,0 +1,36 @@
+groups:
+  - name: alerts
+    rules:
+
+      - alert: InstanceDown
+        expr: up == 0
+        for: 10s
+        labels:
+          severity: critical
+
+      - alert: CPUUsage
+        expr: 100 - (avg by(instance)(rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100) > 70
+        for: 30s
+        labels:
+          severity: warning
+
+      - alert: CPUUsageCritical
+        expr: 100 - (avg by(instance)(rate(node_cpu_seconds_total{mode="idle"}[1m])) * 100) > 90
+        for: 30s
+        labels:
+          severity: critical
+
+      - alert: MemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 70
+        for: 30s
+        labels:
+          severity: warning
+
+      - alert: MemoryUsageCritical
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 90
+        for: 30s
+        labels:
+          severity: critical
+
+      - record: node:memory_usage_percent
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100
