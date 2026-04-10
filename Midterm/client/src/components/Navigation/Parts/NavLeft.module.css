@@ -1,0 +1,8 @@
+.navbarLeft {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLeft > ul {
+    margin-right: calc(var(--m-size) + var(--s-size));
+}

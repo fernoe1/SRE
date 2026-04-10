@@ -1,0 +1,54 @@
+.userItem {
+    position: relative;
+}
+
+.userItemIcon {
+    font-size: 28px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.userItemIcon:hover {
+    color: var(--mobby-special);
+    cursor: pointer;
+}
+
+.userItemMenu {
+    position: absolute;
+    width: 160px;
+    background-color: white;
+    border: 1px solid #c5c5c5;
+
+    top: 30px;
+    left: -140px;
+}
+
+.userItemMenuItemLink {
+    text-decoration: none;
+    color: black;
+}
+
+.userItemMenuItemIcon {
+    margin-left: 5px;
+}
+
+.userItemMenuItem {
+    padding: 12px 16px;
+    list-style: none;
+
+    font-family: var(--font-bengali);
+}
+
+.userItemMenuItem:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.closed .userItemMenu {
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.open .userItemMenu {
+    max-height: 200px; 
+}

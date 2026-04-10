@@ -1,0 +1,15 @@
+.navitem {
+  
+}
+
+.navitemLink {
+  text-decoration: none;
+  color: black;
+  font-family: var(--font-bengali);
+  font-size: var(--font-size-medium);
+  transition: color 0.3s ease; 
+}
+
+.navitemLink:hover {
+  color: var(--mobby-special);
+}

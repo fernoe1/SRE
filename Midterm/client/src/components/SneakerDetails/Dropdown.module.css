@@ -1,0 +1,85 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.dropdown input {
+    width: 458px;
+    border-radius: 0;
+    border: 1px solid black;
+    height: 44px;
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    padding-left: var(--xs-size);
+}
+
+.dropdown input:hover {
+    cursor: pointer;
+}
+
+.dropdown input:focus {
+    outline: none;
+}
+
+.inputArrow {
+    position: absolute;
+    top: 30%;
+    right: 7px;
+    font-size: var(--s-size);
+    transition: transform 0.3s ease;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 45px;
+    width: 474px;
+    background-color: white;
+    border: 1px solid black;
+    border-top: 1px solid rgb(200, 200, 200);
+
+    overflow-y: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.dropdownMenu li {
+    list-style: none;
+    padding: var(--xs-size);
+}
+
+.dropdownMenu li:hover {
+    cursor: pointer;
+    background-color: #f7f7f7;
+}
+
+.dropdownMenu li::after {
+    content: " EU";
+    color: var(--mobby-special);
+    font-size: 14px;
+}
+
+.open .dropdownMenu {
+    max-height: 300px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.closed .dropdownMenu {
+    max-height: 0px;
+}
+
+.open .inputArrow {
+    transform: rotate(180deg);
+}
+
+.closed .dropdownMenu {
+    opacity: 1;
+}
+
+.closed .inputArrow {
+    transform: rotate(0deg);
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cj2-floral-white: #F9F6F0;
+    --cj2-dark-brown: #594731;
+    --cj2-black-brown: #312F2C;
+
+    --cj1-light-brown: #f2efe5;
+
+    --mobby-special: #9cbcba;
+
+    --font-bengali: 'Noto Serif Bengali', serif;
+    --font-roboto: 'Roboto', sans-serif;
+
+    --xs-size: 1rem;
+    --s-size: 1.2rem;
+    --m-size: 1.6rem;
+    --l-size: 3.2rem;
+    --xl-size: 4.8rem;
+    --xxl-size: 5.6rem;
+}
+
+body {
+    background-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}

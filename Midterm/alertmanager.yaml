@@ -1,0 +1,23 @@
+route:
+  receiver: default
+  routes:
+    - match:
+        severity: warning
+      receiver: warning
+
+    - match:
+        severity: critical
+      receiver: critical
+
+receivers:
+  - name: default
+    webhook_configs:
+      - url: http://localhost:5001/
+
+  - name: warning
+    webhook_configs:
+      - url: http://localhost:5001/warning
+
+  - name: critical
+    webhook_configs:
+      - url: http://localhost:5001/critical

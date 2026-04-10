@@ -1,0 +1,10 @@
+.sneakers {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    justify-items: start;
+    align-items: center;
+    width: 1380px;
+    margin: 0 auto;
+    gap: var(--m-size);
+}

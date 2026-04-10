@@ -1,0 +1,90 @@
+.sneakerContainer {
+    position: relative;
+    height: 510px;
+}
+
+.sneakerImageContainer {
+  position: relative;
+  width: 309px;
+  height: 200px;
+  padding: 106px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.sneakerImageContainer:hover {
+  cursor: pointer;
+}
+
+.sneakerWishlistContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sneakerWishlist {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding: var(--xs-size);
+  font-size: var(--s-size);
+}
+
+.sneakerWishlist:hover {
+  color: var(--mobby-special);
+  cursor: pointer;
+}
+
+.favorited {
+  color: var(--mobby-special);
+}
+
+.sneakerImage {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.sneakerDescContainer {
+    position: relative;
+    font-family: var(--font-roboto);
+}
+
+.sneakerDescContainer:hover {
+  cursor: pointer;
+}
+
+.sneakerDesc {
+  position: absolute;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.sneakerBrand {
+    font-weight: 500;
+    padding: calc(var(--s-size) - var(--xs-size)) 0;
+}
+
+.sneakerPrice {
+    padding: var(--xs-size) 0;
+}
+
+.sneakerAvailable {
+    font-weight: 500;
+    color: var(--mobby-special);
+    padding: calc(var(--s-size) - var(--xs-size)) 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}

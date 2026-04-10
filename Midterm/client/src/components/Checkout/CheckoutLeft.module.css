@@ -1,0 +1,19 @@
+.left {
+    padding: var(--m-size);
+    font-family: var(--font-bengali);
+}
+
+.left h2 {
+    margin-bottom: var(--m-size);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--m-size);
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+}

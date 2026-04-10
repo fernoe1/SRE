@@ -1,0 +1,52 @@
+@keyframes fade-down {
+  from { 
+    opacity: 0; 
+    transform: translateY(-20px); 
+    }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+    }
+}
+
+.bannerContainer {
+    margin-left: 180px;
+    margin-right: 180px;
+    height: 400px;
+    background-color: var(--mobby-special);
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin-bottom: var(--xxl-size);
+    margin-top: var(--xs-size);
+
+    animation: fade-down 1s;
+}
+
+.bannerImageContainer {
+    overflow: hidden;
+}
+
+.bannerImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bannerTextContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-bengali);
+    color: var(--cj2-black-brown);
+    text-align: left;
+    justify-content: center;
+}
+
+.bannerTextHeadline {
+    font-size: var(--l-size);
+    margin-left: var(--xl-size);
+}
+
+.bannerText {
+    font-size: var(--m-size);
+    margin-left: var(--xl-size);
+}

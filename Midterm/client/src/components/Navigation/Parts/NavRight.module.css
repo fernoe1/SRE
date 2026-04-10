@@ -1,0 +1,9 @@
+.navbarRight {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbarRight > ul {
+    margin-left: calc(var(--m-size) + var(--s-size));
+}

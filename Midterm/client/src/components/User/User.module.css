@@ -1,0 +1,75 @@
+.userContainer {
+    display: flex;
+    justify-content: center;
+    
+    margin: var(--m-size) auto;
+    height: 500px;
+    width: 700px;
+}
+
+.user {
+    border: 1px solid #c5c5c5;
+    padding: var(--m-size);
+    width: 100%;
+    font-family: var(--font-bengali);
+}
+
+.userDataName, .userDataType, .userData {
+    margin-bottom: 4px 0 12px 0;
+}
+
+.userEmailContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userData {
+    font-weight: bold;
+}
+
+.userDataEmail {
+    color: var(--mobby-special);
+    font-weight: normal;
+}
+
+.userVerify {
+    color: var(--mobby-special);
+    transition: color 0.3s ease;
+}
+
+.userVerify:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.editButton {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+.userForm label input {
+    display: block;
+    border: 1px solid #c5c5c5;
+    padding: 3px;
+    margin: 4px 0 12px 0;
+    width: 100%;
+}
+
+.userForm button {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    margin-right: var(--xs-size);
+    transition: border 0.3s ease;
+
+    font-family: var(--font-roboto);
+}
+
+.userForm button:hover {
+    border: 1px solid var(--mobby-special);
+}
+

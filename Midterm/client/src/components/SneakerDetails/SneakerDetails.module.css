@@ -1,0 +1,169 @@
+.sneakerDetailsContainer {
+    width: 1380px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.sneakerBigImgContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sneakerSmallImgContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sneakerBigImgs {
+    margin-top: 206px;
+    margin-bottom: 56px;
+}
+
+.sneakerSmallImgs {
+    margin-bottom: 53px;
+}
+
+.sneakerBigImgs img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sneakerSmallImgs img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.sneakerContainerOneFr {
+    height: 870px;
+}
+
+.sneakerDesc {
+    margin-top: var(--l-size);
+    position: sticky;
+    top: calc(128px + var(--xs-size));
+    font-family: var(--font-roboto);
+}
+
+.sneakerBrand {
+    font-size: var(--m-size);
+    margin-bottom: calc(var(--m-size) - var(--s-size));
+}
+
+.sneakerName {
+    margin: var(--xs-size) 0;
+}
+
+.sneakerPrice {
+    font-size: var(--m-size);
+}
+
+.bagOrWishlist {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    font-size: calc(var(--s-size) + 1px);
+
+    margin: var(--xs-size) 0 var(--s-size) 0;
+}
+
+.sneakerSizeError {
+    color: red;
+    margin-bottom: 8px;
+}
+
+.bag {
+    width: 475px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.2s ease-in-out;
+    color: white;
+}
+
+.inBag {
+    width: 475px;
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.inBag:hover {
+    cursor: pointer;
+}
+
+.wish {
+    border: 1px solid black;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wishHeart {
+    padding: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bag:hover {
+    border-color: var(--mobby-special);
+    cursor: pointer;
+}
+
+.wish:hover {
+    color: var(--mobby-special);
+    cursor: pointer;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1002;
+}
+
+.modal {
+  background: white;
+  border: 1px solid #c5c5c5;
+  padding: var(--m-size);
+  max-width: 400px;
+  width: 90%;
+  font-family: var(--font-bengali);
+}
+
+.modalActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.modalActions button {
+    font-family: var(--font-bengali);
+    background-color: white;
+    border: none;
+    font-size: var(--xs-size);
+
+    transition: color 0.3s ease;
+}
+
+.modalActions button:hover {
+    color: var(--mobby-special);
+    cursor: pointer;
+}
+

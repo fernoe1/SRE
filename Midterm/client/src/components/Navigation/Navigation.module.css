@@ -1,0 +1,21 @@
+.navbarContainer {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+
+    transition: border-bottom 0.3s ease;
+}
+
+.navbar {
+    width: 1380px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.scrolled.scrolled {
+    border-bottom: 1px solid #ccc;
+}

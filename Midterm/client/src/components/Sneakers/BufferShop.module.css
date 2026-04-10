@@ -1,0 +1,42 @@
+.bufferContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.buffer {
+    width: 1380px;
+    height: var(--l-size);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bufferLeft {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bufferRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.msg {
+    font-size: 32px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    color: black;
+}
+
+.link {
+    font-size: 16px;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: var(--mobby-special);
+}

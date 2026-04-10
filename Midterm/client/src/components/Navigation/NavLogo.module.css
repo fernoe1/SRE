@@ -1,0 +1,14 @@
+.navlogoContainer {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.navlogoImage {
+    height: 6rem;
+}
+
+.navlogoImage:hover {
+    cursor: pointer;
+}
