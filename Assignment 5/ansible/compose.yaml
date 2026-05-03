@@ -1,0 +1,23 @@
+services:
+  target:
+    image: ubuntu:22.04
+    container_name: target-node
+    command: >
+      bash -c "apt update &&
+               apt install -y openssh-server sudo &&
+               mkdir /var/run/sshd &&
+               echo 'root:root' | chpasswd &&
+               sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config &&
+               /usr/sbin/sshd -D"
+    ports:
+      - "2222:22"
+      - "8080:80"
+
+  ansible:
+    build: .
+    container_name: ansible-control
+    volumes:
+      - .:/ansible
+    depends_on:
+      - target
+    tty: true
