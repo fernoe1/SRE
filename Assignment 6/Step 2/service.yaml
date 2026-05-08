@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ecommerce-api-svc
+  namespace: default
+  labels:
+    app: ecommerce-api
+spec:
+  selector:
+    app: ecommerce-api
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 5000
+  type: ClusterIP
